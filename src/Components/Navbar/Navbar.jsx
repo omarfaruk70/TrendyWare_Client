@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
+
+
 
 const Navbar = () => {
   const navlink = (
@@ -90,7 +93,7 @@ const Navbar = () => {
       )}
       {/* navbar */}
       <div className="navbar bg-yellow-300 px-8">
-        <div className="navbar-start">
+        <div className="md:navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -118,7 +121,7 @@ const Navbar = () => {
           <Link className="ml-3" to={'/'}>
             <div className="flex justify-center items-center gap-3">
             <h2 className="text-xl font-primaryFont font-extrabold">TrendyWare</h2>
-            <img className="rounded-tl-full rounded-bl-full rounded-br-full h-14" src="/logo.svg" alt="logo" />
+            <img className="hidden md:block rounded-tl-full rounded-bl-full rounded-br-full h-14" src="/logo.svg" alt="logo" />
             </div>
           </Link>
         </div>
@@ -128,6 +131,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
+          <div className="relative cursor-pointer" title="cart">
+          <FiShoppingCart className="mr-8 text-4xl text-white"/>
+          <p className="absolute text-white bottom-6 right-9 font-bold">0</p>
+          </div>
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
