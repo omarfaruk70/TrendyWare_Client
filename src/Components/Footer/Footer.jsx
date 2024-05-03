@@ -17,7 +17,7 @@ const Footer = () => {
         <img
           src="/logo.svg"
           alt="brand-image"
-          className="rounded-tl-full rounded-bl-full rounded-tr-full w-32 h-32 mb-3"
+          className="rounded-tl-full rounded-bl-full rounded-tr-full w-20 h-20 md:w-32 md:h-32 mb-3"
         />
         <div className="flex justify-center items-center gap-4">
           <IoLocation className="text-xl" />
