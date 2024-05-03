@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaDribbble,
 } from "react-icons/fa";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const Footer = () => {
   const date = new Date();
@@ -78,6 +79,9 @@ const Footer = () => {
         </div>
       </nav>
     </section>
+    <div className="h-16 w-16 rounded-full p-5 flex justify-center absolute right-20 -mt-8 bg-yellow-600 text-blue-300">
+      <ScrollToTop></ScrollToTop>
+    </div>
     <hr />
     <div className="mt-5 flex flex-col md:flex-row justify-around">
       <div>

@@ -123,7 +123,7 @@ const Navbar = () => {
           <Link className="ml-3" to={"/"}>
             <div className="flex justify-center items-center gap-3">
               <h2 className="text-xl font-primaryFont font-extrabold">
-                TrendyWare
+                TrendyWear
               </h2>
               <img
                 className="hidden md:block rounded-tl-full rounded-bl-full rounded-br-full h-14"
