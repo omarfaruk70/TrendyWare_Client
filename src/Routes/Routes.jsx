@@ -10,7 +10,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">Loading..........</div>}>
+      <Suspense
+        fallback={
+          <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
+            Loading..........
+          </div>
+        }
+      >
         <App></App>
       </Suspense>
     ),
@@ -19,7 +25,13 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <Suspense fallback={<div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">Loading..........</div>}>
+          <Suspense
+            fallback={
+              <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
+                Loading..........
+              </div>
+            }
+          >
             <Home></Home>
           </Suspense>
         ),
@@ -27,7 +39,13 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: (
-          <Suspense fallback={<div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">Loading.......</div>}>
+          <Suspense
+            fallback={
+              <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
+                Loading.......
+              </div>
+            }
+          >
             <Shop></Shop>
           </Suspense>
         ),
