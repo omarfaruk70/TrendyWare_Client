@@ -5,33 +5,23 @@ const App = lazy(() => import("../App"));
 const Home = lazy(() => import("../Pages/Home/Home"));
 const Shop = lazy(() => import("../Pages/Shop/Shop"));
 const Contact = lazy(() => import("../Pages/Contact/Contact"));
+const ErrorPage = lazy(() => import("../Pages/ErrorPage/ErrorPage"));
+const Loader = lazy(() => import("../Components/Loader/Loader"));
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense
-        fallback={
-          <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
-            Loading..........
-          </div>
-        }
-      >
+      <Suspense fallback={<Loader></Loader>}>
         <App></App>
       </Suspense>
     ),
-    errorElement: <h>This is an error page</h>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: (
-          <Suspense
-            fallback={
-              <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
-                Loading..........
-              </div>
-            }
-          >
+          <Suspense fallback={<Loader></Loader>}>
             <Home></Home>
           </Suspense>
         ),
@@ -39,13 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: (
-          <Suspense
-            fallback={
-              <div className="h-screen flex justify-center items-center text-yellow-500 text-3xl">
-                Loading.......
-              </div>
-            }
-          >
+          <Suspense fallback={<Loader></Loader>}>
             <Shop></Shop>
           </Suspense>
         ),
@@ -53,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: (
-          <Suspense fallback={<div>Loading.......</div>}>
+          <Suspense fallback={<Loader></Loader>}>
             <Contact></Contact>
           </Suspense>
         ),

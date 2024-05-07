@@ -59,7 +59,7 @@ const Footer = () => {
           <FaDribbble className="hover:text-yellow-300 cursor-pointer hover:animate-ping" />
         </div>
         <div className="mt-4">
-          <h2 className="md:text-2xl pb-4">Subscibe newslatter</h2>
+          <h2 className="md:text-2xl pb-4">Subscibe our newslatter</h2>
           <div className="relative">
             <input
               type="text"
