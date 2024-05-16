@@ -10,8 +10,8 @@ const ScrollToTop = () => {
   };
   return (
     <div className="cursor-pointer" onClick={ScrollToTop}>
-      <div className="h-52">
-        <FaArrowUp className="text-3xl font-bold text-white animate-bounce" />
+      <div>
+        <FaArrowUp className=" text-2xl -mt-1 md:text-3xl font-bold text-white animate-bounce" />
       </div>
     </div>
   );

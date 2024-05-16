@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <Suspense fallback={<Loader></Loader>}>
-        <App></App>
+      <App></App>
       </Suspense>
     ),
     errorElement: <ErrorPage></ErrorPage>,
